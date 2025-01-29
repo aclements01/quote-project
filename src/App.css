@@ -1,0 +1,31 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e12b2b;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* SideBar Styling */
+.side-bar {
+  width: 250px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+}
+
+.side-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.side-info h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
