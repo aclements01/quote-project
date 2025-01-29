@@ -1,31 +1,152 @@
 /* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e12b2b;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  --border-radius: 15px;
+  --blue: #1c47ff;
+  --pink: #d6a3fb;
+  --green: #d0ff94;
+  --grey: #e5e5e5;
+  --background: #000000;
+  --text-color: #ffffff;
+  --sidebar-width: 250px;
+
+  background: var(--background);
+  color: var(--text-color);
+  font-size: 18px;
+  font-family: 'Syne', sans-serif;
+}
+
+/* Layout */
+.app-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   height: 100vh;
 }
 
-/* SideBar Styling */
-.side-bar {
-  width: 250px;
-  background-color: #222;
-  color: white;
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--blue);
   padding: 20px;
   height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-.side-info h1 {
-  font-size: 1.5rem;
+.sidebar h2 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.author-list {
+  list-style: none;
+  padding: 0;
+}
+
+.author-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease-in-out;
+}
+
+.author-list a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.author-list li:hover {
+  background: var(--pink);
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: var(--grey);
+  color: #000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Quotes */
+.quote-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+}
+
+.quote {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 6px solid var(--blue);
+  border-radius: var(--border-radius);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.quote:hover {
+  transform: scale(1.02);
+}
+
+.quote h3 {
+  font-size: 22px;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #222;
 }
 
-.side-info h2 {
-  font-size: 1rem;
+.quote h4,
+.quote h5,
+.quote h6 {
+  font-size: 16px;
   font-weight: normal;
-  line-height: 1.5;
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quote {
+  animation: fadeIn 0.5s ease-in-out;
 }
