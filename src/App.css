@@ -12,8 +12,17 @@
 }
 
 /*Side Bar*/
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+}
+
 .side-info {
-  margin: 25%;
   padding: 5px;
 }
 
@@ -21,6 +30,7 @@
   font-family: 'Teko', serif;
   font-size: 60pt;
   text-align: justify;
+  margin-top: 25%;
 }
 
 h2 {
@@ -33,4 +43,19 @@ p {
 
 /*Title Area*/
 div.main h1 {
+  position: fixed;
+  top: 0;
+  left: 400px;
+  width: calc(100vw - 350px);
+  height: 100px;
+  background-color: red;
+  z-index: 1001;
+}
+
+/*Main*/
+.main {
+  margin-left: 400px;
+  padding-top: 110px;
+  height: calc(100vh - 110px);
+  overflow-y: auto;
 }
