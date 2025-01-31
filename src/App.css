@@ -7,10 +7,6 @@
   background-color: black;
 }
 
-.flex-row {
-  display: flex;
-}
-
 /*Side Bar*/
 .side-bar {
   position: fixed;
@@ -28,9 +24,9 @@
 
 .side-info h1 {
   font-family: 'Teko', serif;
-  font-size: 60pt;
+  font-size: 55pt;
   text-align: justify;
-  margin-top: 25%;
+  margin-top: 30%;
 }
 
 h2 {
@@ -46,16 +42,28 @@ div.main h1 {
   position: fixed;
   top: 0;
   left: 400px;
-  width: calc(100vw - 350px);
+  width: calc(100vw - 400px);
   height: 100px;
-  background-color: red;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 100px;
   z-index: 1001;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 /*Main*/
 .main {
+  margin-top: 40px;
+}
+.main li {
+  display: flex;
+  position: sticky;
   margin-left: 400px;
   padding-top: 110px;
-  height: calc(100vh - 110px);
+
   overflow-y: auto;
 }
