@@ -10,6 +10,11 @@ const MainContent = ({ quotes }) => {
 
   return (
     <div className="main">
+      <img
+        src={quotes[index].image}
+        alt={`Cover of ${quotes[index].source}`}
+        className="quote-image"
+      />
       <Quote
         key={quotes[index].id}
         text={quotes[index].quote}
