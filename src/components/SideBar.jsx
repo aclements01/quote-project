@@ -4,12 +4,14 @@ const SideBar = () => {
       <div className="side-info">
         <h1>Depressing Quote Array Project</h1>
         <h2>
-          I kept an annotated database of quotes from books I read in graduate
+          This is an annotated archive of excerpts from books I read in graduate
           school.
         </h2>
         <p>
-          Many of the sources are referencing memory, death, poetry, esoteric
-          thought, etc...
+          The selections drift through memory, death, poetry, and esoteric
+          thought, mapping the tension between longing and resignation, knowing
+          and believing. These are not just quotes; they are echoes of restless
+          minds contemplating the impermanence of things.
         </p>
       </div>
     </div>
