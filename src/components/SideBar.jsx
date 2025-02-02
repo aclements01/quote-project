@@ -8,10 +8,8 @@ const SideBar = () => {
           school.
         </h2>
         <p>
-          The selections drift through memory, death, poetry, and esoteric
-          thought, mapping the tension between longing and resignation, knowing
-          and believing. These are not just quotes; they are echoes of restless
-          minds contemplating the impermanence of things.
+          The selections explore memory, death, poetry, and esoteric thought,
+          mapping tension between longing and resignation.
         </p>
       </div>
     </div>
