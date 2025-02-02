@@ -6,15 +6,14 @@ const SideBar = () => {
         <h2>
           I kept an annotated database of quotes from books I read in graduate
           school.
-          <p>
-            Many of the sources are referencing memory, death, poetry, esoteric
-            thought, etc...
-          </p>
         </h2>
+        <p>
+          Many of the sources are referencing memory, death, poetry, esoteric
+          thought, etc...
+        </p>
       </div>
     </div>
   )
 }
 
 export default SideBar
-//fdsjhkl

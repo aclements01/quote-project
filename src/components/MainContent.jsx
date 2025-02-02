@@ -10,7 +10,6 @@ const MainContent = ({ quotes }) => {
 
   return (
     <div className="main">
-      <h1>Quotes</h1>
       <Quote
         key={quotes[index].id}
         text={quotes[index].quote}
