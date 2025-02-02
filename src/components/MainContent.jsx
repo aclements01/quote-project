@@ -1,18 +1,26 @@
+import { useState } from 'react'
 import Quote from './Quote.jsx'
 
-const MainContent = (props) => {
+const MainContent = ({ quotes }) => {
+  const [index, setIndex] = useState(0)
+
+  const nextQuote = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % quotes.length)
+  }
+
   return (
     <div className="main">
       <h1>Quotes</h1>
-      {props.quotes.map((quote) => (
-        <Quote
-          key={quote.id}
-          text={quote.quote} // Ensure this matches the dataset
-          author={quote.author}
-          source={quote.source}
-          year={quote.year}
-        />
-      ))}
+      <Quote
+        key={quotes[index].id}
+        text={quotes[index].quote}
+        author={quotes[index].author}
+        source={quotes[index].source}
+        year={quotes[index].year}
+      />
+      <button className="next-quote" onClick={nextQuote}>
+        Next Quote
+      </button>
     </div>
   )
 }
