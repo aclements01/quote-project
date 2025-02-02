@@ -41,6 +41,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: 'Gruppo', serif;
+  font-size: 40px;
+}
+
+li {
+  list-style: none;
 }
 
 h1 {
@@ -50,15 +56,38 @@ h1 {
   letter-spacing: 2px;
   background: white;
   color: black;
+  margin: 20px;
   padding: 10px;
   display: inline-block;
   border: 3px solid black;
+  font-family: 'Teko', serif;
 }
 
 h2 {
   margin-top: 40px;
   padding: 10px;
   font-family: 'Gruppo', serif;
+}
+
+h3 {
+  margin: 10px;
+  color: rgb(235, 67, 67);
+}
+
+h4 {
+  color: goldenrod;
+  opacity: 0.75;
+}
+
+h5 {
+  color: goldenrod;
+  opacity: 0.75;
+}
+
+h6 {
+  margin: 10px;
+  color: salmon;
+  opacity: 0.75;
 }
 
 button.next-quote {
@@ -71,6 +100,7 @@ button.next-quote {
   border: 3px solid black;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: 'Teko', serif;
 }
 
 button.next-quote:hover {
@@ -87,4 +117,5 @@ button.next-quote:hover {
   color: black;
   font-weight: bold;
   border-top: 5px solid black;
+  font-family: 'Gruppo', serif;
 }
