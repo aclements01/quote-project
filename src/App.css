@@ -28,23 +28,23 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  text-align: left;
+  text-align: start;
 }
 
 .side-bar h1 {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .side-info h2 {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   font-family: 'Gruppo', serif;
   font-size: 30px;
   padding: 20px;
 }
 
 .side-info p {
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   padding: 20px;
   background-color: black;
   font-family: 'Gruppo', serif;
@@ -64,7 +64,6 @@
 }
 
 /*book covers*/
-
 .book-cover {
   max-width: 60%;
   height: 500px;
@@ -109,6 +108,7 @@ h3 {
   color: whitesmoke;
   font-family: 'Gruppo', serif;
   font-size: 40pt;
+  text-transform: uppercase;
 }
 
 h4 {
