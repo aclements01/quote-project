@@ -1,4 +1,4 @@
-# Quote Project - Alexis Clements - General Assembly
+# Quote Project - Alexis Clements - General Assembly - Web Development Fundamentals
 
 ## Overview
 
