@@ -14,4 +14,4 @@ For this project, you will be tasked with creating a website using ReactJS and a
 - Must utilize `mapping` to render your data to the screen
 - Must utilize Flexbox or Grid somewhere on the page
 - A minimum of **20** git commits
-- Deploy your project: https://quote-project.pages.dev/ (cloudflare)
+- Deploy your project: https://quote-project.pages.dev/ (cloudflare) and misanthopeful.surge.sh (surge)
